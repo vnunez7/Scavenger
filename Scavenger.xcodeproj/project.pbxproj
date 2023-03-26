@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		7D05549129CFEC8300082017 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D05549029CFEC8300082017 /* AppDelegate.swift */; };
 		7D05549329CFEC8300082017 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D05549229CFEC8300082017 /* SceneDelegate.swift */; };
-		7D05549529CFEC8300082017 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D05549429CFEC8300082017 /* ViewController.swift */; };
+		7D05549529CFEC8300082017 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D05549429CFEC8300082017 /* TaskListViewController.swift */; };
 		7D05549829CFEC8300082017 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D05549629CFEC8300082017 /* Main.storyboard */; };
 		7D05549A29CFEC8600082017 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D05549929CFEC8600082017 /* Assets.xcassets */; };
 		7D05549D29CFEC8600082017 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D05549B29CFEC8600082017 /* LaunchScreen.storyboard */; };
+		7D0554A529CFF1CA00082017 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0554A429CFF1CA00082017 /* TaskCell.swift */; };
+		7D0554AC29CFF2BC00082017 /* TaskDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0554AB29CFF2BC00082017 /* TaskDetailViewController.swift */; };
+		7D0554AE29CFF2D200082017 /* TaskAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0554AD29CFF2D200082017 /* TaskAnnotationView.swift */; };
+		7D0554B129CFF32200082017 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0554B029CFF32200082017 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7D05548D29CFEC8300082017 /* Scavenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scavenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D05549029CFEC8300082017 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D05549229CFEC8300082017 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7D05549429CFEC8300082017 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7D05549429CFEC8300082017 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
 		7D05549729CFEC8300082017 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7D05549929CFEC8600082017 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D05549C29CFEC8600082017 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D05549E29CFEC8600082017 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D0554A429CFF1CA00082017 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		7D0554AB29CFF2BC00082017 /* TaskDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailViewController.swift; sourceTree = "<group>"; };
+		7D0554AD29CFF2D200082017 /* TaskAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskAnnotationView.swift; sourceTree = "<group>"; };
+		7D0554B029CFF32200082017 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,41 @@
 			children = (
 				7D05549029CFEC8300082017 /* AppDelegate.swift */,
 				7D05549229CFEC8300082017 /* SceneDelegate.swift */,
-				7D05549429CFEC8300082017 /* ViewController.swift */,
+				7D0554AF29CFF30D00082017 /* Models */,
+				7D0554AA29CFF29900082017 /* Task Detail */,
+				7D0554A629CFF1D600082017 /* Task List */,
 				7D05549629CFEC8300082017 /* Main.storyboard */,
 				7D05549929CFEC8600082017 /* Assets.xcassets */,
 				7D05549B29CFEC8600082017 /* LaunchScreen.storyboard */,
 				7D05549E29CFEC8600082017 /* Info.plist */,
 			);
 			path = Scavenger;
+			sourceTree = "<group>";
+		};
+		7D0554A629CFF1D600082017 /* Task List */ = {
+			isa = PBXGroup;
+			children = (
+				7D05549429CFEC8300082017 /* TaskListViewController.swift */,
+				7D0554A429CFF1CA00082017 /* TaskCell.swift */,
+			);
+			path = "Task List";
+			sourceTree = "<group>";
+		};
+		7D0554AA29CFF29900082017 /* Task Detail */ = {
+			isa = PBXGroup;
+			children = (
+				7D0554AB29CFF2BC00082017 /* TaskDetailViewController.swift */,
+				7D0554AD29CFF2D200082017 /* TaskAnnotationView.swift */,
+			);
+			path = "Task Detail";
+			sourceTree = "<group>";
+		};
+		7D0554AF29CFF30D00082017 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7D0554B029CFF32200082017 /* Task.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D05549529CFEC8300082017 /* ViewController.swift in Sources */,
+				7D0554B129CFF32200082017 /* Task.swift in Sources */,
+				7D0554AC29CFF2BC00082017 /* TaskDetailViewController.swift in Sources */,
+				7D0554A529CFF1CA00082017 /* TaskCell.swift in Sources */,
+				7D05549529CFEC8300082017 /* TaskListViewController.swift in Sources */,
 				7D05549129CFEC8300082017 /* AppDelegate.swift in Sources */,
 				7D05549329CFEC8300082017 /* SceneDelegate.swift in Sources */,
+				7D0554AE29CFF2D200082017 /* TaskAnnotationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
