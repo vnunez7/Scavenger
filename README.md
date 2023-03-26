@@ -35,7 +35,7 @@ GIF created with Kap for macOS
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+I have accommodations for assignment submissions.
 
 ## License
 
